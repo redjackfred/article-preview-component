@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+	--color-white: #ffffff;
+	--color-grey-200: #ecf2f8;
+	--color-grey-400: #9daec2;
+	--color-grey-500: #6e8098;
+	--color-grey-900: #48556a;
+}
+
+@layer components {
+	.text-preset-1-bold {
+		font-family: "Manrope", sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 130%;
+		letter-spacing: 0.25px;
+	}
+	.text-preset-2-medium {
+		font-family: "Manrope", sans-serif;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 140%;
+		letter-spacing: 0.12%;
+	}
+	.text-preset-2-bold {
+		font-family: "Manrope", sans-serif;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 140%;
+		letter-spacing: 0.12%;
+	}
+	.text-preset-3 {
+		font-family: "Manrope", sans-serif;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 140%;
+		letter-spacing: 25%;
+	}
+	.tooltip-arrow::after {
+		content: "";
+		position: absolute;
+		bottom: -11px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		border-left: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-top: 12px solid var(--color-grey-900); /* your grey-900 color */
+		@apply hidden md:block;
+	}
+}
