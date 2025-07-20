@@ -1,6 +1,6 @@
-import facebookIcon from "./assets/images/icon-facebook.svg";
-import twitterIcon from "./assets/images/icon-twitter.svg";
-import pinterestIcon from "./assets/images/icon-pinterest.svg";
+import facebookIcon from "/src/assets/images/icon-facebook.svg";
+import twitterIcon from "/src/assets/images/icon-twitter.svg";
+import pinterestIcon from "/src/assets/images/icon-pinterest.svg";
 
 export default function ShareToast() {
 	return (
