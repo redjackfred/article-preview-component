@@ -1,3 +1,5 @@
+import ShareIcon from "/src/assets/images/icon-share.svg";
+
 export default function ShareButton({
 	handleClick,
 	isActive,
@@ -13,7 +15,7 @@ export default function ShareButton({
 			onClick={handleClick}
 		>
 			<img
-				src="./src/assets/images/icon-share.svg"
+				src={ShareIcon}
 				className={`w-4 ${isActive ? "brightness-0 invert" : ""}`}
 			/>
 		</button>

@@ -2,6 +2,8 @@ import "./App.css";
 import ShareButton from "./ShareButton";
 import { useState } from "react";
 import ShareToast from "./ShareToast";
+import Avatar from "/src/assets/images/avatar-michelle.jpg";
+import DrawersImage from "/src/assets/images/drawers.jpg";
 
 function App() {
 	const [showShareToast, setShowShareToast] = useState(false);
@@ -10,7 +12,7 @@ function App() {
 		<div className="bg-grey-200 flex min-h-screen items-center justify-center">
 			<article className="flex flex-col rounded-[10px] shadow-xl md:flex-row">
 				<img
-					src="./src/assets/images/drawers.jpg"
+					src={DrawersImage}
 					className="h-[200px] w-[327px] rounded-t-[10px] object-cover md:h-[346px] md:w-[229px] md:rounded-l-[10px] md:rounded-r-none xl:h-[280px] xl:w-[285px]"
 				/>
 				<section className="rounded-lg bg-white md:w-[379px] md:rounded-l-none xl:w-[450px]">
@@ -23,13 +25,13 @@ function App() {
 							<p className="text-preset-2-medium text-grey-500 mt-6">
 								Ever been in a room and felt like something was missing? Perhaps
 								it felt slightly bare and uninviting. I’ve got some simple tips
-								to help you make any room feel complete.
+								to help you make any room feel complete!
 							</p>
 						</section>
 						<section className="relative mt-12 md:mt-6">
 							<div className="flex gap-4">
 								<img
-									src="./src/assets/images/avatar-michelle.jpg"
+									src={Avatar}
 									width="40px"
 									height="40px"
 									className="rounded-full"
